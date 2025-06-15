@@ -1,0 +1,14 @@
+D:\WebstormProjects\BlockchainApp\blockchain-backend\src\main\java\org\example\repository\UserRepository.java
+D:\WebstormProjects\BlockchainApp\blockchain-backend\src\main\java\org\example\BlockchainVoterApplication.java
+D:\WebstormProjects\BlockchainApp\blockchain-backend\src\main\java\org\example\service\BlockchainService.java
+D:\WebstormProjects\BlockchainApp\blockchain-backend\src\main\java\org\example\entity\Vote.java
+D:\WebstormProjects\BlockchainApp\blockchain-backend\src\main\java\org\example\service\UserDetailService.java
+D:\WebstormProjects\BlockchainApp\blockchain-backend\src\main\java\org\example\service\UserService.java
+D:\WebstormProjects\BlockchainApp\blockchain-backend\src\main\java\org\example\controller\UserController.java
+D:\WebstormProjects\BlockchainApp\blockchain-backend\src\main\java\org\example\config\SecurityConfig.java
+D:\WebstormProjects\BlockchainApp\blockchain-backend\src\main\java\org\example\repository\VoteRepository.java
+D:\WebstormProjects\BlockchainApp\blockchain-backend\src\main\java\org\example\dto\request\RegistrationRequest.java
+D:\WebstormProjects\BlockchainApp\blockchain-backend\src\main\java\org\example\repository\BlockRepository.java
+D:\WebstormProjects\BlockchainApp\blockchain-backend\src\main\java\org\example\entity\Block.java
+D:\WebstormProjects\BlockchainApp\blockchain-backend\src\main\java\org\example\controller\BlockchainController.java
+D:\WebstormProjects\BlockchainApp\blockchain-backend\src\main\java\org\example\entity\User.java

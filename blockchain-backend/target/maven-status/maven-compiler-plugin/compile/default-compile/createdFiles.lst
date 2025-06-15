@@ -1,0 +1,14 @@
+org\example\dto\request\RegistrationRequest.class
+org\example\BlockchainVoterApplication.class
+org\example\controller\BlockchainController.class
+org\example\entity\Vote.class
+org\example\controller\UserController.class
+org\example\entity\User.class
+org\example\repository\UserRepository.class
+org\example\service\BlockchainService.class
+org\example\entity\Block.class
+org\example\repository\BlockRepository.class
+org\example\config\SecurityConfig.class
+org\example\repository\VoteRepository.class
+org\example\service\UserService.class
+org\example\service\UserDetailService.class
