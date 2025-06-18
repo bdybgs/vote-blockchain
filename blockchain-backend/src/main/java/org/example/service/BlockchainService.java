@@ -49,6 +49,20 @@ public class BlockchainService {
      * @param optionId — ID варианта (Option) (кандидата).
      */
     public Block addVoteToBlockchain(User user, long optionId) throws Exception {
+         
+        if (!chain.isEmpty()) {
+        Block last = chain.get(chain.size() - 1);
+        String recalculated = sha256(
+            last.getPreviousHash()
+          + last.getNumber()
+          + last.getTimestamp()
+          + last.getEvent().getId()
+          + last.getVoter().getId());
+            if (!recalculated.equals(last.getCurrentHash()))
+        throw new IllegalStateException("Blockchain integrity violated: last hash mismatch");
+        }
+
+        
         // 1) Найти вариант и событие
         Option opt = optionRepo.findById(optionId)
                 .orElseThrow(() -> new IllegalArgumentException("Option not found"));
@@ -77,6 +91,7 @@ public class BlockchainService {
         block.setVoter(user);
         block.setTotalVoters(event.getVotes().size());
 
+       
         // Вычислим SHA-256 от строки (prevHash + номер + timestamp + eventId + userId)
         String raw = prevHash
                 + block.getNumber()
